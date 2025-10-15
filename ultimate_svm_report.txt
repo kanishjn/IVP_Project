@@ -1,0 +1,78 @@
+================================================================================
+ULTIMATE SVM OPTIMIZATION - COMPREHENSIVE REPORT
+================================================================================
+
+Generated: 2025-10-04 09:52:33
+Random Seed: 42
+Dataset: 666 balanced samples
+Classes: [np.str_('GALAXY'), np.str_('QSO'), np.str_('STAR')]
+
+================================================================================
+ALL STRATEGIES TESTED (Ranked by Test F1)
+================================================================================
+
+1. Feature Selection (50 features)
+   Test F1: 0.5738
+   >>> BEST MODEL <<<
+
+2. RBF Kernel - Extensive
+   Test F1: 0.5600
+   Test Accuracy: 0.5597
+   CV F1: 0.5587
+   Best Parameters:
+     svm__C: 200
+     svm__class_weight: balanced
+     svm__gamma: auto
+     svm__kernel: rbf
+
+3. Feature Selection (45 features)
+   Test F1: 0.5597
+
+4. Feature Selection (40 features)
+   Test F1: 0.5589
+
+5. RobustScaler + RBF
+   Test F1: 0.5589
+   Test Accuracy: 0.5597
+   CV F1: 0.5466
+   Best Parameters:
+     svm__C: 5
+     svm__class_weight: balanced
+     svm__gamma: 0.1
+     svm__kernel: rbf
+
+6. Feature Selection (35 features)
+   Test F1: 0.5437
+
+7. Linear Kernel
+   Test F1: 0.5390
+   Test Accuracy: 0.5373
+   CV F1: 0.4850
+   Best Parameters:
+     svm__C: 100
+     svm__class_weight: None
+
+8. Polynomial Kernel
+   Test F1: 0.5286
+   Test Accuracy: 0.5299
+   CV F1: 0.5588
+   Best Parameters:
+     svm__C: 100
+     svm__class_weight: balanced
+     svm__coef0: 0.0
+     svm__degree: 3
+     svm__gamma: auto
+     svm__kernel: poly
+
+9. Feature Selection (30 features)
+   Test F1: 0.5054
+
+10. Feature Selection (25 features)
+   Test F1: 0.5043
+
+================================================================================
+BEST MODEL DETAILS
+================================================================================
+
+Strategy: Feature Selection (50 features)
+Test F1 Score: 0.5738
