@@ -148,7 +148,7 @@ class UltimateSVMOptimizer:
         print("="*80)
         
         try:
-            model_data = joblib.load('balanced_optimized_svm.joblib')
+            model_data = joblib.load('ultimate_svm_model.joblib')
             pipeline = model_data['pipeline']
             
             # Prepare test data
